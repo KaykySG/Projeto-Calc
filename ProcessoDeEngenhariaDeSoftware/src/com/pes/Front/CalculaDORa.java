@@ -20,7 +20,13 @@ public class CalculaDORa extends javax.swing.JFrame {
 
 
 //                               SE LIGA!
-    /**
+    int contadorOperacoes = 0;
+   Operacoes Resultados = new Operacoes();
+   boolean operacoesAnteriores=false;
+   String saida = "";
+   String entrada = "";
+    /*
+     *
      * Creates new form CalculaDORa
      */
 
@@ -380,6 +386,12 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPlusActionPerformed
         // TODO add your handling code here:
+        limpar();
+        verificarOperacoes();
+        saida = "" + Resultados.calcularSoma();
+        jTextFieldSaida.setText(saida);
+        
+        
     }//GEN-LAST:event_jButtonPlusActionPerformed
 
     private void jButtonLessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLessActionPerformed
@@ -388,55 +400,174 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEqualActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_jButtonEqualActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "7";
+         jTextFieldSaida.setText(saida);
+        entrada += "7";
+        
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "8";
+         jTextFieldSaida.setText(saida);
+        entrada += "8";
+        
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "9";
+         jTextFieldSaida.setText(saida);
+        entrada += "9";
+
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "4";
+         jTextFieldSaida.setText(saida);
+        entrada += "4";
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "5";
+         jTextFieldSaida.setText(saida);
+        entrada += "5";
+        
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "6";
+         jTextFieldSaida.setText(saida);
+        entrada += "6";
+        
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "1";
+         jTextFieldSaida.setText(saida);
+        entrada += "1";
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "2";
+         jTextFieldSaida.setText(saida);
+        entrada += "2";
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        limpar();
+        saida += "3";
+         jTextFieldSaida.setText(saida);
+        entrada += "3";
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton0ActionPerformed
         // TODO add your handling code here:
+        String auxiliarZero = jTextFieldSaida.getText();
+        if (auxiliarZero.equals("")||
+                auxiliarZero.equals("0"))jTextFieldSaida.setText(saida);
+        if (auxiliarZero.startsWith("1")||
+                auxiliarZero.startsWith("2")||
+                auxiliarZero.startsWith("3")||
+                auxiliarZero.startsWith("4")||
+                auxiliarZero.startsWith("5")||
+                auxiliarZero.startsWith("6")||
+                auxiliarZero.startsWith("7")||
+                auxiliarZero.startsWith("8")||
+                auxiliarZero.startsWith("9")) {
+            saida += "0";
+            entrada += "0";
+            jTextFieldSaida.setText(saida);
+        }
+        
     }//GEN-LAST:event_jButton0ActionPerformed
 
     private void jButtonDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDotActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().equals("")||jTextFieldSaida.getText().equals("0")){
+            entrada = "0.";
+            if (jTextFieldSaida.getText().equals("")) saida = "0.";
+            if (jTextFieldSaida.getText().equals("0")) saida += "."; 
+        } else{
+            entrada += ".";
+            saida += ".";
+        }
+        jTextFieldSaida.setText(saida);
+        
     }//GEN-LAST:event_jButtonDotActionPerformed
 
     private void jButtonEraseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEraseActionPerformed
         // TODO add your handling code here:
+        Resultados.setValorAuxiliar(1);
+        Resultados.setValorDois(0);
+        Resultados.setValorUm(0);
+        contadorOperacoes = 0;
+        operacoesAnteriores = false;
+        saida = "";
+        entrada = "";
+        jTextFieldSaida.setText("");
+        
     }//GEN-LAST:event_jButtonEraseActionPerformed
+    
+    public void verificarOperacoes (){
+        String resultadoAnterior = jTextFieldSaida.getText();
+        if (contadorOperacoes==0){
+            Resultados.setValorUm(Double.parseDouble(entrada));
+            contadorOperacoes = contadorOperacoes + 1;
+            operacoesAnteriores = true;
+            
+        }
+        if (contadorOperacoes==1) {
+            Resultados.setValorDois(Double.parseDouble(entrada));
+            contadorOperacoes = contadorOperacoes + 1;
+            operacoesAnteriores = true;
+            
+        } 
+        if (resultadoAnterior.equals(saida)){
+            Resultados.setValorUm(Resultados.getValorAuxiliar());
+            contadorOperacoes = contadorOperacoes + 1;
+            operacoesAnteriores = true;
+        }else{
+            Resultados.setValorUm(Resultados.getValorAuxiliar());
+            Resultados.setValorDois(Double.parseDouble(entrada));
+            contadorOperacoes = contadorOperacoes + 1;
+            operacoesAnteriores = true;            
+        }
+    }
+    
+    public void limpar(){
+        if (operacoesAnteriores) {
+            operacoesAnteriores = false;
+            saida = "";
+            entrada = "";
+            jTextFieldSaida.setText(saida);
+        }
+    }
+    
 
     /**
      * @param args the command line arguments
@@ -472,6 +603,8 @@ public class CalculaDORa extends javax.swing.JFrame {
             }
         });
     }
+    
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton0;

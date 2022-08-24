@@ -22,6 +22,7 @@ public class Operacoes {
 //                               SE LIGA!
     private double valorUm = 0;
     private double valorDois = 0;
+    private double valorAuxiliar = 1;
 
     public double getValorUm() {
         return valorUm;
@@ -39,32 +40,42 @@ public class Operacoes {
         this.valorDois = valorDois;
     }
 
+    public double getValorAuxiliar() {
+        return valorAuxiliar;
+    }
+
+    public void setValorAuxiliar(double valorAuxiliar) {
+        this.valorAuxiliar = valorAuxiliar;
+    }
+    
+    
+
     public double calcularSoma() {
-        return (valorUm + valorDois);
+        return valorAuxiliar = (valorUm + valorDois);
     }
 
     public double calcularMultiplicacao() {
-        return (valorUm * valorDois);
+        return valorAuxiliar = (valorUm * valorDois);
     }
 
     public double calcularDivisao() {
-        return (valorUm / valorDois);
+        return valorAuxiliar = (valorUm / valorDois);
     }
 
     public double calcularSubtracao() {
-        return (valorUm - valorDois);
+        return valorAuxiliar = (valorUm - valorDois);
     }
 
     public double calcularPotencia() {//atencao: lembrar de colocar tratamento de exceçao
         //o valor dois não pode ser valor real, deve ser um valor inteiro.
-        return (Math.pow(valorUm, valorDois));
+        return valorAuxiliar = (Math.pow(valorUm, valorDois));
     }
 
     public double calcularPorcentagem() {
-        return (valorUm / 100);
+        return valorAuxiliar = (valorUm / 100);
     }
 
     public double calcularRaizQuadrada() {
-        return (Math.sqrt(valorUm));
+        return valorAuxiliar = (Math.sqrt(valorUm));
     }
 }
