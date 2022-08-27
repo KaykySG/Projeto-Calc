@@ -22,7 +22,7 @@ public class Operacoes {
 //                               SE LIGA!
     private double valorUm = 0;
     private double valorDois = 0;
-    private double valorAuxiliar = 1;
+    private double valorAuxiliar = 0;
 
     public double getValorUm() {
         return valorUm;
