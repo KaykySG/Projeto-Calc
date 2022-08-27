@@ -385,6 +385,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPowerActionPerformed
         // TODO add your handling code here:
+        if (contadorOperacoes >=1) Resultados.setValorUm(Double.parseDouble(jTextFieldSaida.getText()));
         calculo = "potencia";
         limpar();
         verificarOperacoes();
@@ -398,6 +399,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDivideActionPerformed
         // TODO add your handling code here:
+        if (contadorOperacoes >=1) Resultados.setValorUm(Double.parseDouble(jTextFieldSaida.getText()));
         calculo = "divisao";
         if (contadorOperacoes == 0) Resultados.setValorDois(1);
         limpar();
@@ -411,6 +413,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultipleActionPerformed
         // TODO add your handling code here:
+        if (contadorOperacoes >=1) Resultados.setValorUm(Double.parseDouble(jTextFieldSaida.getText()));
         calculo = "multiplicacao";
         limpar();
         verificarOperacoes();
@@ -428,6 +431,7 @@ public class CalculaDORa extends javax.swing.JFrame {
     private void jButtonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPlusActionPerformed
         // TODO add your handling code here:
         calculo = "soma";
+        if (contadorOperacoes >=1) Resultados.setValorUm(Double.parseDouble(jTextFieldSaida.getText()));
         limpar();
         verificarOperacoes();
         if (contadorOperacoes >= 2){
@@ -466,6 +470,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "7";
          jTextFieldSaida.setText(saida);
@@ -475,6 +480,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "8";
          jTextFieldSaida.setText(saida);
@@ -484,6 +490,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "9";
          jTextFieldSaida.setText(saida);
@@ -493,6 +500,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "4";
          jTextFieldSaida.setText(saida);
@@ -502,6 +510,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "5";
          jTextFieldSaida.setText(saida);
@@ -511,6 +520,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "6";
          jTextFieldSaida.setText(saida);
@@ -520,6 +530,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "1";
          jTextFieldSaida.setText(saida);
@@ -530,6 +541,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "2";
          jTextFieldSaida.setText(saida);
@@ -539,6 +551,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0")) saida = "";
         limpar();
         saida += "3";
          jTextFieldSaida.setText(saida);
@@ -550,7 +563,10 @@ public class CalculaDORa extends javax.swing.JFrame {
         // TODO add your handling code here:
         String auxiliarZero = jTextFieldSaida.getText();
         if (auxiliarZero.equals("")||
-                auxiliarZero.equals("0"))jTextFieldSaida.setText(saida);
+                auxiliarZero.equals("0")){
+            saida = "0";
+            jTextFieldSaida.setText(saida);
+        }
         if (auxiliarZero.startsWith("1")||
                 auxiliarZero.startsWith("2")||
                 auxiliarZero.startsWith("3")||
@@ -597,6 +613,7 @@ public class CalculaDORa extends javax.swing.JFrame {
     public void verificarOperacoes (){
         
         String resultadoAnterior = jTextFieldSaida.getText();
+        entrada = "" + jTextFieldSaida.getText();
         if (contadorOperacoes == 0){
             Resultados.setValorUm(Double.parseDouble(entrada));
             contadorOperacoes = contadorOperacoes + 1;
