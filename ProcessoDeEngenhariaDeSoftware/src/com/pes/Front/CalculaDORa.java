@@ -27,6 +27,7 @@ public class CalculaDORa extends javax.swing.JFrame {
    String entrada = "";
    String calculo = "";
    String resultadoAnterior = "";
+   boolean numero1e2 = true;
     /*
      *
      * Creates new form CalculaDORa
@@ -382,6 +383,9 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRootActionPerformed
         // TODO add your handling code here:
+        calculo = "raiz";
+        numero1e2 = false;
+        alternadorDeNuemros();
         entrada = jTextFieldSaida.getText();
         Resultados.setValorUm(Double.parseDouble(entrada));
         saida = "" + Resultados.calcularRaizQuadrada();
@@ -396,6 +400,8 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPowerActionPerformed
         // TODO add your handling code here:
+        calculo = "potencia";
+        alternadorDeNuemros();
         if (Resultados.getValorDois()<=0) Resultados.setValorDois(1);
         if (!calculo.equals("") && !calculo.equals("potencia")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
@@ -420,6 +426,8 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDivideActionPerformed
         // TODO add your handling code here:
+        calculo = "divisao";
+        alternadorDeNuemros();
         if (contadorOperacoes == 0) Resultados.setValorDois(1);
         if (!calculo.equals("") && !calculo.equals("divisao")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
@@ -444,6 +452,8 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultipleActionPerformed
         // TODO add your handling code here:
+        calculo = "multiplicacao";
+        alternadorDeNuemros();
         if (contadorOperacoes == 0)Resultados.setValorDois(1.0);
         if (!calculo.equals("") && !calculo.equals("multiplicacao")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
@@ -468,6 +478,8 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPlusActionPerformed
         // TODO add your handling code here:
+        calculo = "soma";
+        alternadorDeNuemros();
         if (!calculo.equals("") && !calculo.equals("soma")){
             if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
             if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
@@ -492,6 +504,8 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonLessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLessActionPerformed
         // TODO add your handling code here:
+        calculo = "subtracao";
+        alternadorDeNuemros();
         if (!calculo.equals("") && !calculo.equals("subtracao")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
             if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
@@ -700,6 +714,19 @@ public class CalculaDORa extends javax.swing.JFrame {
             jTextFieldSaida.setText(saida);
         }
     }
+    public String alternadorDeNuemros(){
+    if (numero1e2){
+        System.out.println("Aguardando valor dois\n valor 1");
+        System.out.println(Resultados.getValorUm());
+        numero1e2 = false;
+    }
+    else{ 
+        
+        numero1e2 = true;
+        return calculo;
+    }
+    return "";
+}
     public boolean igualdadePotencia (){
         boolean VF = false;
         if (calculo.equals("potencia")){
