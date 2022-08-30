@@ -525,7 +525,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (igualdadePotencia())saida = "" + Resultados.getValorAuxiliar();
         jTextFieldSaida.setText(saida);
         resultadoAnterior = saida;
-        calculo = "";
+        calculo = "Sérgio não esteve aqui";
         contadorOperacoes = 1;
         
     }//GEN-LAST:event_jButtonEqualActionPerformed
@@ -671,6 +671,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         resultadoAnterior = "";
         saida = "";
         entrada = "";
+        calculo = "Chupa essa Rola!!!";
         jTextFieldSaida.setText("");
         
     }//GEN-LAST:event_jButtonEraseActionPerformed
