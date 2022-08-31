@@ -23,7 +23,9 @@ public class Operacoes {
     private double valorUm = 0;
     private double valorDois = 0;
     private double valorAuxiliar = 0;
-
+    
+    public boolean operadorAtivo = false;
+    
     public double getValorUm() {
         return valorUm;
     }
@@ -54,28 +56,29 @@ public class Operacoes {
         return valorAuxiliar = (valorUm + valorDois);
     }
 
-    public double calcularMultiplicacao() {
+    public double calcularMultiplicacao(){
         return valorAuxiliar = (valorUm * valorDois);
     }
 
-    public double calcularDivisao() {
+    public double calcularDivisao(){
         return valorAuxiliar = (valorUm / valorDois);
     }
 
-    public double calcularSubtracao() {
+    public double calcularSubtracao(){
         return valorAuxiliar = (valorUm - valorDois);
     }
 
-    public double calcularPotencia() {//atencao: lembrar de colocar tratamento de exceçao
+    public double calcularPotencia(){//atencao: lembrar de colocar tratamento de exceçao
         //o valor dois não pode ser valor real, deve ser um valor inteiro.
-        return valorAuxiliar = (Math.pow(valorUm, valorDois));
+       return valorAuxiliar = (Math.pow(valorUm, valorDois));
     }
 
-    public double calcularPorcentagem() {
+    public double calcularPorcentagem(){
         return valorAuxiliar = (valorUm / 100);
     }
 
-    public double calcularRaizQuadrada() {
+    public double calcularRaizQuadrada()throws Exception{
+        if(valorUm < 0) throw new Exception ("O valor não pode ser negativo");
         return valorAuxiliar = (Math.sqrt(valorUm));
     }
 }
