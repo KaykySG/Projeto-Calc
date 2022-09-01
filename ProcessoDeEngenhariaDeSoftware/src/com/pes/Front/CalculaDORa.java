@@ -87,6 +87,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButtonPersentActionPerformed(evt);
             }
         });
+        jButtonPersent.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonPersentKeyPressed(evt);
+            }
+        });
 
         jButtonRoot.setBackground(new java.awt.Color(255, 204, 204));
         jButtonRoot.setFont(new java.awt.Font("Aharoni", 0, 18)); // NOI18N
@@ -96,13 +101,23 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButtonRootActionPerformed(evt);
             }
         });
+        jButtonRoot.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonRootKeyPressed(evt);
+            }
+        });
 
         jButtonPower.setBackground(new java.awt.Color(255, 204, 204));
         jButtonPower.setFont(new java.awt.Font("Aharoni", 0, 36)); // NOI18N
-        jButtonPower.setText("^");
+        jButtonPower.setText("x^y");
         jButtonPower.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonPowerActionPerformed(evt);
+            }
+        });
+        jButtonPower.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonPowerKeyPressed(evt);
             }
         });
 
@@ -114,6 +129,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButtonDivideActionPerformed(evt);
             }
         });
+        jButtonDivide.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonDivideKeyPressed(evt);
+            }
+        });
 
         jButtonMultiple.setBackground(new java.awt.Color(255, 204, 204));
         jButtonMultiple.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -121,6 +141,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButtonMultiple.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonMultipleActionPerformed(evt);
+            }
+        });
+        jButtonMultiple.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonMultipleKeyPressed(evt);
             }
         });
 
@@ -132,6 +157,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButtonPlusActionPerformed(evt);
             }
         });
+        jButtonPlus.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonPlusKeyPressed(evt);
+            }
+        });
 
         jButtonLess.setBackground(new java.awt.Color(255, 204, 204));
         jButtonLess.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -139,6 +169,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButtonLess.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonLessActionPerformed(evt);
+            }
+        });
+        jButtonLess.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonLessKeyPressed(evt);
             }
         });
 
@@ -150,6 +185,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButtonEqualActionPerformed(evt);
             }
         });
+        jButtonEqual.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonEqualKeyPressed(evt);
+            }
+        });
 
         jButton7.setBackground(new java.awt.Color(255, 204, 204));
         jButton7.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -157,6 +197,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
+            }
+        });
+        jButton7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton7KeyPressed(evt);
             }
         });
 
@@ -168,6 +213,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButton8ActionPerformed(evt);
             }
         });
+        jButton8.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton8KeyPressed(evt);
+            }
+        });
 
         jButton9.setBackground(new java.awt.Color(255, 204, 204));
         jButton9.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -175,6 +225,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
+            }
+        });
+        jButton9.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton9KeyPressed(evt);
             }
         });
 
@@ -186,6 +241,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButton4ActionPerformed(evt);
             }
         });
+        jButton4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton4KeyPressed(evt);
+            }
+        });
 
         jButton5.setBackground(new java.awt.Color(255, 204, 204));
         jButton5.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -193,6 +253,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
+            }
+        });
+        jButton5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton5KeyPressed(evt);
             }
         });
 
@@ -204,6 +269,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButton6ActionPerformed(evt);
             }
         });
+        jButton6.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton6KeyPressed(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(255, 204, 204));
         jButton1.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -211,6 +281,14 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton1KeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jButton1KeyReleased(evt);
             }
         });
 
@@ -222,6 +300,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButton2ActionPerformed(evt);
             }
         });
+        jButton2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton2KeyPressed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(255, 204, 204));
         jButton3.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -229,6 +312,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
+            }
+        });
+        jButton3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton3KeyPressed(evt);
             }
         });
 
@@ -240,6 +328,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButton0ActionPerformed(evt);
             }
         });
+        jButton0.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButton0KeyPressed(evt);
+            }
+        });
 
         jButtonDot.setBackground(new java.awt.Color(255, 204, 204));
         jButtonDot.setFont(new java.awt.Font("Aharoni", 0, 48)); // NOI18N
@@ -249,6 +342,11 @@ public class CalculaDORa extends javax.swing.JFrame {
                 jButtonDotActionPerformed(evt);
             }
         });
+        jButtonDot.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonDotKeyPressed(evt);
+            }
+        });
 
         jButtonErase.setBackground(new java.awt.Color(255, 204, 204));
         jButtonErase.setFont(new java.awt.Font("Aharoni", 0, 24)); // NOI18N
@@ -256,6 +354,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         jButtonErase.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonEraseActionPerformed(evt);
+            }
+        });
+        jButtonErase.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jButtonEraseKeyPressed(evt);
             }
         });
 
@@ -869,6 +972,572 @@ public class CalculaDORa extends javax.swing.JFrame {
         jTextFieldSaida.setText("0");
         Resultados.operadorAtivo = false;
     }//GEN-LAST:event_jButtonEraseActionPerformed
+
+    private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1KeyPressed
+
+    private void jButton1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyReleased
+       // TODO add your handling code here:
+       switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+        
+        
+    }//GEN-LAST:event_jButton1KeyReleased
+
+    private void jButton2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton2KeyPressed
+
+    private void jButton3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton3KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton3KeyPressed
+
+    private void jButton0KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton0KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton0KeyPressed
+
+    private void jButtonDotKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonDotKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonDotKeyPressed
+
+    private void jButtonEqualKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonEqualKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonEqualKeyPressed
+
+    private void jButtonLessKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonLessKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonLessKeyPressed
+
+    private void jButtonPlusKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonPlusKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonPlusKeyPressed
+
+    private void jButtonMultipleKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonMultipleKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonMultipleKeyPressed
+
+    private void jButtonDivideKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonDivideKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonDivideKeyPressed
+
+    private void jButtonEraseKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonEraseKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonEraseKeyPressed
+
+    private void jButtonPowerKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonPowerKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonPowerKeyPressed
+
+    private void jButtonRootKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonRootKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonRootKeyPressed
+
+    private void jButtonPersentKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonPersentKeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButtonPersentKeyPressed
+
+    private void jButton4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton4KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton4KeyPressed
+
+    private void jButton5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton5KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton5KeyPressed
+
+    private void jButton6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton6KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton6KeyPressed
+
+    private void jButton7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton7KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton7KeyPressed
+
+    private void jButton8KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton8KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton8KeyPressed
+
+    private void jButton9KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton9KeyPressed
+        // TODO add your handling code here:
+        switch (evt.getKeyCode()) {
+           case java.awt.event.KeyEvent.VK_1, java.awt.event.KeyEvent.VK_NUMPAD1 -> jButton1.doClick();
+           case java.awt.event.KeyEvent.VK_0, java.awt.event.KeyEvent.VK_NUMPAD0 -> jButton0.doClick();
+           case java.awt.event.KeyEvent.VK_2, java.awt.event.KeyEvent.VK_NUMPAD2 -> jButton2.doClick();
+           case java.awt.event.KeyEvent.VK_3, java.awt.event.KeyEvent.VK_NUMPAD3 -> jButton3.doClick();
+           case java.awt.event.KeyEvent.VK_4, java.awt.event.KeyEvent.VK_NUMPAD4 -> jButton4.doClick();
+           case java.awt.event.KeyEvent.VK_5, java.awt.event.KeyEvent.VK_NUMPAD5 -> jButton5.doClick();
+           case java.awt.event.KeyEvent.VK_6, java.awt.event.KeyEvent.VK_NUMPAD6 -> jButton6.doClick();
+           case java.awt.event.KeyEvent.VK_7, java.awt.event.KeyEvent.VK_NUMPAD7 -> jButton7.doClick();
+           case java.awt.event.KeyEvent.VK_8, java.awt.event.KeyEvent.VK_NUMPAD8 -> jButton8.doClick();
+           case java.awt.event.KeyEvent.VK_9, java.awt.event.KeyEvent.VK_NUMPAD9 -> jButton9.doClick();
+           case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
+           case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
+           case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
+           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
+           case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
+           case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
+           case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
+           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
+           default -> {
+           }
+       }
+    }//GEN-LAST:event_jButton9KeyPressed
 
     public void verificarOperacoes (){
         
