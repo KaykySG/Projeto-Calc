@@ -11,6 +11,7 @@ import javax.swing.JOptionPane;
  */
 public class CalculaDORa extends javax.swing.JFrame {
     
+    
 //                               SE LIGA!
     
     
@@ -25,9 +26,9 @@ public class CalculaDORa extends javax.swing.JFrame {
    Operacoes Resultados = new Operacoes();
    boolean operacoesAnteriores=false;
    String saida = "";
-   String entrada = "";
-   String calculo = "";
-   String resultadoAnterior = "";
+   String entrada = "0";
+   String calculo = "Skate";
+   String resultadoAnterior = "0";
     /*
      *
      * Creates new form CalculaDORa
@@ -368,7 +369,41 @@ public class CalculaDORa extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonPersentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPersentActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here:¹²³£¢¬§§§
+        if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
+        if (!calculo.equals("") && !calculo.equals("porcentagem")){
+            if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
+            if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
+            if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
+            try{
+                if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
+            }catch (Exception erro){
+                Resultados.setValorAuxiliar(0);
+                Resultados.setValorDois(0);
+                Resultados.setValorUm(0);
+                contadorOperacoes = 0;
+                operacoesAnteriores = false;
+                resultadoAnterior = "";
+                saida = "";
+                entrada = "";
+                calculo = "Chupa essa Rola!!!";
+                jTextFieldSaida.setText("");
+                Resultados.operadorAtivo = false;
+                JOptionPane.showMessageDialog(this, erro.getMessage());
+            }
+            entrada = saida;
+            Resultados.setValorUm(Double.parseDouble(entrada));
+            saida = "" + Resultados.calcularPorcentagem();
+            jTextFieldSaida.setText(saida);
+            resultadoAnterior = saida;
+            operacoesAnteriores = true;
+            entrada = saida;
+            contadorOperacoes = contadorOperacoes + 1;
+            calculo = "porcentagem";
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
+            return;
+        }
         entrada = jTextFieldSaida.getText();
         Resultados.setValorUm(Double.parseDouble(entrada));
         saida = "" + Resultados.calcularPorcentagem();
@@ -377,262 +412,300 @@ public class CalculaDORa extends javax.swing.JFrame {
         operacoesAnteriores = true;
         entrada = saida;
         contadorOperacoes = contadorOperacoes + 1;
-        calculo = "CANSEI DESSA PORRA";
+        calculo = "porcentagem";
+        if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         
     }//GEN-LAST:event_jButtonPersentActionPerformed
 
     private void jButtonRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRootActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         try{
-        entrada = jTextFieldSaida.getText();
-        Resultados.setValorUm(Double.parseDouble(entrada));
-        saida = "" + Resultados.calcularRaizQuadrada();
-        jTextFieldSaida.setText(saida);
-        resultadoAnterior = saida;
-        operacoesAnteriores = true;
-        entrada = saida;
-        contadorOperacoes = contadorOperacoes + 1;
-        calculo = "raiz";
-        Resultados.operadorAtivo = true;
+            if (!calculo.equals("") && !calculo.equals("raiz")){
+                if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
+                entrada = saida;
+                Resultados.setValorUm(Double.parseDouble(entrada));
+                saida = "" + Resultados.calcularRaizQuadrada();
+                jTextFieldSaida.setText(saida);
+                resultadoAnterior = saida;
+                operacoesAnteriores = true;
+                contadorOperacoes = contadorOperacoes + 1;
+                calculo = "raiz";
+                Resultados.operadorAtivo = true;
+                if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
+                return;
+            }
+            entrada = jTextFieldSaida.getText();
+            Resultados.setValorUm(Double.parseDouble(entrada));
+            saida = "" + Resultados.calcularRaizQuadrada();
+            jTextFieldSaida.setText(saida);
+            resultadoAnterior = saida;
+            operacoesAnteriores = true;
+            entrada = saida;
+            contadorOperacoes = contadorOperacoes + 1;
+            calculo = "raiz";
+            Resultados.operadorAtivo = true;
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         }catch (Exception erro){
             Resultados.setValorAuxiliar(0);
-        Resultados.setValorDois(0);
-        Resultados.setValorUm(0);
-        contadorOperacoes = 0;
-        operacoesAnteriores = false;
-        resultadoAnterior = "";
-        saida = "";
-        entrada = "";
-        calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
-        Resultados.operadorAtivo = false;
+            Resultados.setValorDois(0);
+            Resultados.setValorUm(0);
+            contadorOperacoes = 0;
+            operacoesAnteriores = false;
+            resultadoAnterior = "";
+            saida = "";
+            entrada = "";
+            calculo = "Chupa essa Rola!!!";
+            jTextFieldSaida.setText("");
+            Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
     }//GEN-LAST:event_jButtonRootActionPerformed
 
     private void jButtonPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPowerActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         try{
-        if (Resultados.getValorDois()<=0) Resultados.setValorDois(1);
-        if (!calculo.equals("") && !calculo.equals("potencia")){
-            if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
-            jTextFieldSaida.setText(saida);
+            if (Resultados.getValorDois()<=0) Resultados.setValorDois(1);
+            if (!calculo.equals("") && !calculo.equals("potencia")){
+                    if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
+                    if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
+                    if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
+                    if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
+                    jTextFieldSaida.setText(saida);
+                    calculo = "potencia";
+                    verificarOperacoes();
+                    resultadoAnterior = saida;
+                    if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
+                    return;
+            }
             calculo = "potencia";
             verificarOperacoes();
-            resultadoAnterior = saida;
-            return;
-        }
-        calculo = "potencia";
-        verificarOperacoes();
-        if (contadorOperacoes >= 2){
-        saida = "" + Resultados.calcularPotencia();
-        jTextFieldSaida.setText(saida);
-        resultadoAnterior = saida;
-        }
-        Resultados.operadorAtivo = true;
+            if(Resultados.getValorDois() == 0)throw new Exception("Indefinido ou 1");
+            if (contadorOperacoes >= 2){
+                saida = "" + Resultados.calcularPotencia();
+                jTextFieldSaida.setText(saida);
+                resultadoAnterior = saida;
+            }
+            Resultados.operadorAtivo = true;
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         }catch (Exception erro){
             Resultados.setValorAuxiliar(0);
-        Resultados.setValorDois(0);
-        Resultados.setValorUm(0);
-        contadorOperacoes = 0;
-        operacoesAnteriores = false;
-        resultadoAnterior = "";
-        saida = "";
-        entrada = "";
-        calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
-        Resultados.operadorAtivo = false;
+            Resultados.setValorDois(0);
+            Resultados.setValorUm(0);
+            contadorOperacoes = 0;
+            operacoesAnteriores = false;
+            resultadoAnterior = "";
+            saida = "";
+            entrada = "";
+            calculo = "Chupa essa Rola!!!";
+            jTextFieldSaida.setText("");
+            Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
     }//GEN-LAST:event_jButtonPowerActionPerformed
 
     private void jButtonDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDivideActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         try{
-        if (contadorOperacoes == 0) Resultados.setValorDois(1);
-        if (!calculo.equals("") && !calculo.equals("divisao")){
-            if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
-            jTextFieldSaida.setText(saida);
+            if (contadorOperacoes == 0) Resultados.setValorDois(1);
+            if (!calculo.equals("") && !calculo.equals("divisao")){
+                if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
+                jTextFieldSaida.setText(saida);
+                calculo = "divisao";
+                verificarOperacoes();
+                resultadoAnterior = saida;
+                if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
+                return;
+            }
             calculo = "divisao";
             verificarOperacoes();
-            resultadoAnterior = saida;
-            return;
-        }
-        calculo = "divisao";
-        verificarOperacoes();
-        if (contadorOperacoes > 1){
-        saida = "" + Resultados.calcularDivisao();
-        jTextFieldSaida.setText(saida);
-        resultadoAnterior = saida;
-        }
-        Resultados.operadorAtivo = true;
+            if(Resultados.getValorDois() == 0)throw new Exception("Impossivel dividir por 0");
+            if (contadorOperacoes > 1){
+                saida = "" + Resultados.calcularDivisao();
+                jTextFieldSaida.setText(saida);
+                resultadoAnterior = saida;
+            }
+            Resultados.operadorAtivo = true;
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         }catch (Exception erro){
             Resultados.setValorAuxiliar(0);
-        Resultados.setValorDois(0);
-        Resultados.setValorUm(0);
-        contadorOperacoes = 0;
-        operacoesAnteriores = false;
-        resultadoAnterior = "";
-        saida = "";
-        entrada = "";
-        calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
-        Resultados.operadorAtivo = false;
+            Resultados.setValorDois(0);
+            Resultados.setValorUm(0);
+            contadorOperacoes = 0;
+            operacoesAnteriores = false;
+            resultadoAnterior = "";
+            saida = "";
+            entrada = "";
+            calculo = "Chupa essa Rola!!!";
+            jTextFieldSaida.setText("");
+            Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
     }//GEN-LAST:event_jButtonDivideActionPerformed
 
     private void jButtonMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultipleActionPerformed
         // TODO add your handling code here:
-        if (contadorOperacoes == 0)Resultados.setValorDois(1.0);
+        if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         if (!calculo.equals("") && !calculo.equals("multiplicacao")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
             if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
             try{
-            if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
             }catch (Exception erro){
-            Resultados.setValorAuxiliar(0);
-        Resultados.setValorDois(0);
-        Resultados.setValorUm(0);
-        contadorOperacoes = 0;
-        operacoesAnteriores = false;
-        resultadoAnterior = "";
-        saida = "";
-        entrada = "";
-        calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
-        Resultados.operadorAtivo = false;
-            JOptionPane.showMessageDialog(this, erro.getMessage());
-        }
+                Resultados.setValorAuxiliar(0);
+                Resultados.setValorDois(0);
+                Resultados.setValorUm(0);
+                contadorOperacoes = 0;
+                operacoesAnteriores = false;
+                resultadoAnterior = "";
+                saida = "";
+                entrada = "";
+                calculo = "Chupa essa Rola!!!";
+                jTextFieldSaida.setText("");
+                Resultados.operadorAtivo = false;
+                JOptionPane.showMessageDialog(this, erro.getMessage());
+            }
             jTextFieldSaida.setText(saida);
             calculo = "multiplicacao";
             verificarOperacoes();
             resultadoAnterior = saida;
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
             return;
         }
         calculo = "multiplicacao";
         verificarOperacoes();
         if (contadorOperacoes >= 2){
-        saida = "" + Resultados.calcularMultiplicacao();
-        jTextFieldSaida.setText(saida);
-        resultadoAnterior = saida;
+            saida = "" + Resultados.calcularMultiplicacao();
+            jTextFieldSaida.setText(saida);
+            resultadoAnterior = saida;
         }
         Resultados.operadorAtivo = true;
+        if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         
     }//GEN-LAST:event_jButtonMultipleActionPerformed
 
     private void jButtonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPlusActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         if (!calculo.equals("") && !calculo.equals("soma")){
             if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
             if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
-           try{
-            if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
-             if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
-           }catch (Exception erro){
-            Resultados.setValorAuxiliar(0);
-        Resultados.setValorDois(0);
-        Resultados.setValorUm(0);
-        contadorOperacoes = 0;
-        operacoesAnteriores = false;
-        resultadoAnterior = "";
-        saida = "";
-        entrada = "";
-        calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
-        Resultados.operadorAtivo = false;
-            JOptionPane.showMessageDialog(this, erro.getMessage());
-        }
+            try{
+                if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
+                }catch (Exception erro){
+                    Resultados.setValorAuxiliar(0);
+                    Resultados.setValorDois(0);
+                    Resultados.setValorUm(0);
+                    contadorOperacoes = 0;
+                    operacoesAnteriores = false;
+                    resultadoAnterior = "";
+                    saida = "";
+                    entrada = "";
+                    calculo = "Chupa essa Rola!!!";
+                    jTextFieldSaida.setText("");
+                    Resultados.operadorAtivo = false;
+                    JOptionPane.showMessageDialog(this, erro.getMessage());
+                }
             jTextFieldSaida.setText(saida);
             calculo = "soma";
             verificarOperacoes();
             resultadoAnterior = saida;
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
             return;
         }
         calculo = "soma";
         verificarOperacoes();
         if (contadorOperacoes >= 2){
-        saida = "" + Resultados.calcularSoma();
-        jTextFieldSaida.setText(saida);
-        resultadoAnterior = saida;
+            saida = "" + Resultados.calcularSoma();
+            jTextFieldSaida.setText(saida);
+            resultadoAnterior = saida;
         }
         Resultados.operadorAtivo = true;
+        if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         
     }//GEN-LAST:event_jButtonPlusActionPerformed
 
     private void jButtonLessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLessActionPerformed
         // TODO add your handling code here:
+        if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         if (!calculo.equals("") && !calculo.equals("subtracao")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
             if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
             try{
-            if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
-            if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadePotencia()) saida = "" + Resultados.getValorAuxiliar();
+                if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
             }catch (Exception erro){
-            Resultados.setValorAuxiliar(0);
-        Resultados.setValorDois(0);
-        Resultados.setValorUm(0);
-        contadorOperacoes = 0;
-        operacoesAnteriores = false;
-        resultadoAnterior = "";
-        saida = "";
-        entrada = "";
-        calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
-        Resultados.operadorAtivo = false;
-            JOptionPane.showMessageDialog(this, erro.getMessage());
-        }
+                Resultados.setValorAuxiliar(0);
+                Resultados.setValorDois(0);
+                Resultados.setValorUm(0);
+                contadorOperacoes = 0;
+                operacoesAnteriores = false;
+                resultadoAnterior = "";
+                saida = "";
+                entrada = "";
+                calculo = "Chupa essa Rola!!!";
+                jTextFieldSaida.setText("");
+                Resultados.operadorAtivo = false;
+                JOptionPane.showMessageDialog(this, erro.getMessage());
+            }
             jTextFieldSaida.setText(saida);
             calculo = "subtracao";
             verificarOperacoes();
             resultadoAnterior = saida;
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
             return;
         }
         calculo = "subtracao";
         verificarOperacoes();
         if (contadorOperacoes >= 2){
-        saida = "" + Resultados.calcularSubtracao();
-        jTextFieldSaida.setText(saida);
-        entrada = saida;
-        resultadoAnterior = saida;
+            saida = "" + Resultados.calcularSubtracao();
+            jTextFieldSaida.setText(saida);
+            entrada = saida;
+            resultadoAnterior = saida;
         }
         Resultados.operadorAtivo = true;
+        if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         
     }//GEN-LAST:event_jButtonLessActionPerformed
 
     private void jButtonEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEqualActionPerformed
         // TODO add your handling code here:
         try{
-        entrada = jTextFieldSaida.getText();
-        verificarOperacoes();
-        if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
-        if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
-        if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
-        if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
-        if (igualdadePotencia())saida = "" + Resultados.getValorAuxiliar();
-        jTextFieldSaida.setText(saida);
-        resultadoAnterior = saida;
-        calculo = "Sérgio não esteve aqui";
-        contadorOperacoes = 1;
+            entrada = jTextFieldSaida.getText();
+            verificarOperacoes();
+            if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
+            if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
+            if (igualdadeMultiplicacao())saida = "" + Resultados.getValorAuxiliar();
+            if (igualdadeDivisao())saida = "" + Resultados.getValorAuxiliar();
+            if (igualdadePotencia())saida = "" + Resultados.getValorAuxiliar();
+            jTextFieldSaida.setText(saida);
+            resultadoAnterior = saida;
+            calculo = "Sérgio não esteve aqui";
+            contadorOperacoes = 1;
+            if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
         }catch (Exception erro){
             Resultados.setValorAuxiliar(0);
-        Resultados.setValorDois(0);
-        Resultados.setValorUm(0);
-        contadorOperacoes = 0;
-        operacoesAnteriores = false;
-        resultadoAnterior = "";
-        saida = "";
-        entrada = "";
-        calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
-        Resultados.operadorAtivo = false;
+            Resultados.setValorDois(0);
+            Resultados.setValorUm(0);
+            contadorOperacoes = 0;
+            operacoesAnteriores = false;
+            resultadoAnterior = "";
+            saida = "";
+            entrada = "";
+            calculo = "Chupa essa Rola!!!";
+            jTextFieldSaida.setText("");
+            Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
     }//GEN-LAST:event_jButtonEqualActionPerformed
@@ -642,7 +715,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "7";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "7";
         
     }//GEN-LAST:event_jButton7ActionPerformed
@@ -652,7 +725,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "8";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "8";
         
     }//GEN-LAST:event_jButton8ActionPerformed
@@ -662,7 +735,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "9";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "9";
 
     }//GEN-LAST:event_jButton9ActionPerformed
@@ -672,7 +745,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "4";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "4";
 
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -682,7 +755,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "5";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "5";
         
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -692,7 +765,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "6";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "6";
         
     }//GEN-LAST:event_jButton6ActionPerformed
@@ -702,7 +775,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "1";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "1";
         
         
@@ -713,7 +786,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "2";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "2";
 
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -723,7 +796,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (jTextFieldSaida.getText().startsWith("0") && jTextFieldSaida.getText().endsWith("0") && !jTextFieldSaida.getText().startsWith("0.")) saida = "";
         limpar();
         saida += "3";
-         jTextFieldSaida.setText(saida);
+        jTextFieldSaida.setText(saida);
         entrada += "3";
 
     }//GEN-LAST:event_jButton3ActionPerformed
@@ -735,6 +808,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         if (auxiliarZero.equals("")||
                 auxiliarZero.equals("0")){
             saida = "0";
+            entrada = "0";
             jTextFieldSaida.setText(saida);
         }
         if (auxiliarZero.startsWith("1")||
@@ -757,11 +831,23 @@ public class CalculaDORa extends javax.swing.JFrame {
     private void jButtonDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDotActionPerformed
         // TODO add your handling code here:
         limpar();
-        if (jTextFieldSaida.getText().equals("")||jTextFieldSaida.getText().equals("0")){
+        if ((jTextFieldSaida.getText().equals("")||
+                jTextFieldSaida.getText().equals("0")) &&
+                !jTextFieldSaida.getText().contains(".")){
             entrada = "0.";
-            if (jTextFieldSaida.getText().equals("")) saida = "0.";
-            if (jTextFieldSaida.getText().equals("0")) saida += "."; 
-        } else{
+            saida = "0.";
+        }
+        if ((jTextFieldSaida.getText().startsWith("0.")||
+                jTextFieldSaida.getText().startsWith("1")||
+                jTextFieldSaida.getText().startsWith("2")||
+                jTextFieldSaida.getText().startsWith("3")||
+                jTextFieldSaida.getText().startsWith("4")||
+                jTextFieldSaida.getText().startsWith("5")||
+                jTextFieldSaida.getText().startsWith("6")||
+                jTextFieldSaida.getText().startsWith("7")||
+                jTextFieldSaida.getText().startsWith("8")||
+                jTextFieldSaida.getText().startsWith("9")) &&
+                !jTextFieldSaida.getText().contains(".")){
             entrada += ".";
             saida += ".";
         }
@@ -776,11 +862,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         Resultados.setValorUm(0);
         contadorOperacoes = 0;
         operacoesAnteriores = false;
-        resultadoAnterior = "";
+        resultadoAnterior = "0";
         saida = "";
-        entrada = "";
+        entrada = "0";
         calculo = "Chupa essa Rola!!!";
-        jTextFieldSaida.setText("");
+        jTextFieldSaida.setText("0");
         Resultados.operadorAtivo = false;
     }//GEN-LAST:event_jButtonEraseActionPerformed
 
@@ -813,9 +899,9 @@ public class CalculaDORa extends javax.swing.JFrame {
     }
     public boolean igualdadePotencia ()throws Exception{
         boolean VF = false;
-          if(Resultados.getValorDois() == 0)throw new Exception("Indefinido ou 1");
         if (calculo.equals("potencia")){
             Resultados.setValorDois(Double.parseDouble(entrada));
+            if(Resultados.getValorDois() == 0)throw new Exception("Indefinido ou 1");
             if (!resultadoAnterior.equals("") && !resultadoAnterior.equals("0")){
                 Resultados.setValorUm(Double.parseDouble(resultadoAnterior));
             }
@@ -827,9 +913,9 @@ public class CalculaDORa extends javax.swing.JFrame {
     }
     public boolean igualdadeDivisao ()throws Exception{
         boolean VF = false;
-        if(Resultados.getValorDois() == 0)throw new Exception("Impossivel dividir por 0");
         if (calculo.equals("divisao")){
             Resultados.setValorDois(Double.parseDouble(entrada));
+            if(Resultados.getValorDois() == 0)throw new Exception("Impossivel dividir por 0");
             if (!resultadoAnterior.equals("") && !resultadoAnterior.equals("0")){
                 Resultados.setValorUm(Double.parseDouble(resultadoAnterior));
             }
@@ -939,3 +1025,80 @@ public class CalculaDORa extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldSaida;
     // End of variables declaration//GEN-END:variables
 }
+
+
+/*
+                                                                      Creditos:
+
+
+
+                                            Direção:
+
+                                        Julio Nome Japa
+                                        Kayky Ferreira Alguma Coisa
+                                        Sérgio Tudo Com "S" Júnior
+
+
+                                Edição:
+                                
+                            Julio Nome Japa
+                            Kayky Ferreira Alguma Coisa
+
+
+                                            Maquiagem:
+                                        Sérgio Tudo com "S" Júnior
+                                        Kayky Ferreira Alguma Coisa
+
+
+                                                            Seguradores de Bifão:
+
+                                                        Gilmenor Ninguém Sabe o Resto
+                                                        Eugênio Camiseta Foda
+                            
+                                Donos do Treco
+
+                            Julio Nome Japa
+                            Kayky Ferreira Alguma Coisa
+                            Sérgio Tudo Com "S"
+
+                                                            Produção:
+
+                                                        Julio Nome Japa
+                                                        Gilmenor Ninguém Sabe o Resto
+                                                        Eugênio Camiseta Foda
+
+
+                                    Fotografia:
+
+                                Julio Nome Japa
+                                Sérgio Tudo Com "S" Júnior
+
+
+                                                Sonosplatia:
+
+                                            Kayky Ferreira Alguma Coisa
+
+
+
+
+                        :-)                         (-:                    SENAI
+                    calculaDORa@               PROJETO CALC            @Equipe Senai
+
+                                    
+
+
+
+                                                                                    em memória da nossa sanidade mental
+                                                                                    nunca-2022      querida amiga _|_
+                                                                                                                   |
+                                                                                                                   | 
+
+
+
+
+
+                                                                                                                             Cena Pós Creditos:
+                                                                                                                             
+                                                                                                                             Acredite no seu potencial
+                                                                                                                             Dê um peteleco num policial!!!
+*/
