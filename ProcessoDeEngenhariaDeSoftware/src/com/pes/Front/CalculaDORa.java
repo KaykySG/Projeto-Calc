@@ -993,7 +993,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1023,7 +1023,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1051,7 +1051,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1079,7 +1079,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1107,7 +1107,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1135,7 +1135,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1163,7 +1163,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1191,7 +1191,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1219,7 +1219,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1247,7 +1247,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1275,7 +1275,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1303,7 +1303,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1331,7 +1331,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1359,7 +1359,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1387,7 +1387,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1415,7 +1415,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1443,7 +1443,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1471,7 +1471,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1499,7 +1499,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
@@ -1527,7 +1527,7 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_ASTERISK, java.awt.event.KeyEvent.VK_MULTIPLY -> jButtonMultiple.doClick();
            case java.awt.event.KeyEvent.VK_SLASH, java.awt.event.KeyEvent.VK_DIVIDE -> jButtonDivide.doClick();
            case java.awt.event.KeyEvent.VK_PLUS, java.awt.event.KeyEvent.VK_ADD -> jButtonPlus.doClick();
-           case java.awt.event.KeyEvent.VK_LESS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
+           case java.awt.event.KeyEvent.VK_MINUS, java.awt.event.KeyEvent.VK_SUBTRACT -> jButtonLess.doClick();
            case java.awt.event.KeyEvent.VK_CIRCUMFLEX -> jButtonPower.doClick();
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
