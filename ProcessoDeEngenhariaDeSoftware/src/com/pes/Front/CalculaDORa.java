@@ -4,6 +4,9 @@
  */
 package com.pes.Front;
 import com.pes.Classes.Operacoes;
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.net.URL;
 import javax.swing.JOptionPane;
 /**
  *
@@ -95,7 +98,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
         jButtonRoot.setBackground(new java.awt.Color(255, 204, 204));
         jButtonRoot.setFont(new java.awt.Font("Aharoni", 0, 18)); // NOI18N
-        jButtonRoot.setText("R");
+        jButtonRoot.setText("Raiz");
         jButtonRoot.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonRootActionPerformed(evt);
@@ -473,6 +476,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonPersentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPersentActionPerformed
         // TODO add your handling code here:¹²³£¢¬§§§
+        playTodos();
         if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         if (!calculo.equals("") && !calculo.equals("porcentagem")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
@@ -517,7 +521,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         contadorOperacoes = contadorOperacoes + 1;
         calculo = "porcentagem";
         if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
-        
+       
     }//GEN-LAST:event_jButtonPersentActionPerformed
 
     private void jButtonRootActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRootActionPerformed
@@ -567,6 +571,7 @@ public class CalculaDORa extends javax.swing.JFrame {
             Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
+        playTodos();
     }//GEN-LAST:event_jButtonRootActionPerformed
 
     private void jButtonPowerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPowerActionPerformed
@@ -610,10 +615,12 @@ public class CalculaDORa extends javax.swing.JFrame {
             Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
+        playTodos();
     }//GEN-LAST:event_jButtonPowerActionPerformed
 
     private void jButtonDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDivideActionPerformed
         // TODO add your handling code here:
+        playTodos();
         if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         try{
             if (contadorOperacoes == 0) Resultados.setValorDois(1);
@@ -653,10 +660,12 @@ public class CalculaDORa extends javax.swing.JFrame {
             Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
+        
     }//GEN-LAST:event_jButtonDivideActionPerformed
 
     private void jButtonMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMultipleActionPerformed
         // TODO add your handling code here:
+        playTodos();
         if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         if (!calculo.equals("") && !calculo.equals("multiplicacao")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
@@ -699,6 +708,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPlusActionPerformed
         // TODO add your handling code here:
+        playTodos();
         if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         if (!calculo.equals("") && !calculo.equals("soma")){
             if (igualdadeSubtracao())saida = "" + Resultados.getValorAuxiliar();
@@ -736,11 +746,11 @@ public class CalculaDORa extends javax.swing.JFrame {
         }
         Resultados.operadorAtivo = true;
         if (jTextFieldSaida.getText().equals("Infinity"))jTextFieldSaida.setText("ERROR");
-        
     }//GEN-LAST:event_jButtonPlusActionPerformed
 
     private void jButtonLessActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLessActionPerformed
         // TODO add your handling code here:
+        playTodos();
         if (jTextFieldSaida.getText().equals(""))jTextFieldSaida.setText("0");
         if (!calculo.equals("") && !calculo.equals("subtracao")){
             if (igualdadeSoma())saida = "" + Resultados.getValorAuxiliar();
@@ -784,6 +794,7 @@ public class CalculaDORa extends javax.swing.JFrame {
 
     private void jButtonEqualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEqualActionPerformed
         // TODO add your handling code here:
+        playTodos();
         try{
             entrada = jTextFieldSaida.getText();
             verificarOperacoes();
@@ -811,6 +822,7 @@ public class CalculaDORa extends javax.swing.JFrame {
             Resultados.operadorAtivo = false;
             JOptionPane.showMessageDialog(this, erro.getMessage());
         }
+        
     }//GEN-LAST:event_jButtonEqualActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
@@ -820,7 +832,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "7";
         jTextFieldSaida.setText(saida);
         entrada += "7";
-        
+        playTodos();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
@@ -830,7 +842,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "8";
         jTextFieldSaida.setText(saida);
         entrada += "8";
-        
+        playTodos();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
@@ -840,7 +852,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "9";
         jTextFieldSaida.setText(saida);
         entrada += "9";
-
+        playTodos();
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -850,7 +862,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "4";
         jTextFieldSaida.setText(saida);
         entrada += "4";
-
+        playTodos();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
@@ -860,7 +872,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "5";
         jTextFieldSaida.setText(saida);
         entrada += "5";
-        
+        playTodos();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -870,7 +882,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "6";
         jTextFieldSaida.setText(saida);
         entrada += "6";
-        
+        playTodos();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -880,7 +892,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "1";
         jTextFieldSaida.setText(saida);
         entrada += "1";
-        
+        playTodos();
         
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -891,7 +903,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "2";
         jTextFieldSaida.setText(saida);
         entrada += "2";
-
+        playTodos();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -901,7 +913,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         saida += "3";
         jTextFieldSaida.setText(saida);
         entrada += "3";
-
+        playTodos();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton0ActionPerformed
@@ -928,7 +940,7 @@ public class CalculaDORa extends javax.swing.JFrame {
             entrada += "0";
             jTextFieldSaida.setText(saida);
         }
-        
+        playTodos();
     }//GEN-LAST:event_jButton0ActionPerformed
 
     private void jButtonDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDotActionPerformed
@@ -955,7 +967,7 @@ public class CalculaDORa extends javax.swing.JFrame {
             saida += ".";
         }
         jTextFieldSaida.setText(saida);
-        
+        playTodos();
     }//GEN-LAST:event_jButtonDotActionPerformed
 
     private void jButtonEraseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEraseActionPerformed
@@ -971,6 +983,7 @@ public class CalculaDORa extends javax.swing.JFrame {
         calculo = "Chupa essa Rola!!!";
         jTextFieldSaida.setText("0");
         Resultados.operadorAtivo = false;
+        playTodos();
     }//GEN-LAST:event_jButtonEraseActionPerformed
 
     private void jButton1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyPressed
@@ -998,11 +1011,11 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_R -> jButtonRoot.doClick();
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
-           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
-           default -> {
+           case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();           default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+       if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+       else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
         
         
     }//GEN-LAST:event_jButton1KeyReleased
@@ -1029,10 +1042,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+       else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton2KeyPressed
 
     private void jButton3KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton3KeyPressed
@@ -1057,10 +1070,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton3KeyPressed
 
     private void jButton0KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton0KeyPressed
@@ -1085,10 +1098,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton0KeyPressed
 
     private void jButtonDotKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonDotKeyPressed
@@ -1113,10 +1126,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonDotKeyPressed
 
     private void jButtonEqualKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonEqualKeyPressed
@@ -1141,10 +1154,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonEqualKeyPressed
 
     private void jButtonLessKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonLessKeyPressed
@@ -1169,10 +1182,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonLessKeyPressed
 
     private void jButtonPlusKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonPlusKeyPressed
@@ -1197,10 +1210,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonPlusKeyPressed
 
     private void jButtonMultipleKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonMultipleKeyPressed
@@ -1225,10 +1238,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonMultipleKeyPressed
 
     private void jButtonDivideKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonDivideKeyPressed
@@ -1253,10 +1266,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonDivideKeyPressed
 
     private void jButtonEraseKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonEraseKeyPressed
@@ -1281,10 +1294,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonEraseKeyPressed
 
     private void jButtonPowerKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonPowerKeyPressed
@@ -1309,10 +1322,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonPowerKeyPressed
 
     private void jButtonRootKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonRootKeyPressed
@@ -1337,10 +1350,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonRootKeyPressed
 
     private void jButtonPersentKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButtonPersentKeyPressed
@@ -1365,10 +1378,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButtonPersentKeyPressed
 
     private void jButton4KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton4KeyPressed
@@ -1393,10 +1406,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton4KeyPressed
 
     private void jButton5KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton5KeyPressed
@@ -1421,10 +1434,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton5KeyPressed
 
     private void jButton6KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton6KeyPressed
@@ -1449,10 +1462,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton6KeyPressed
 
     private void jButton7KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton7KeyPressed
@@ -1477,10 +1490,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton7KeyPressed
 
     private void jButton8KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton8KeyPressed
@@ -1505,10 +1518,10 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
     }//GEN-LAST:event_jButton8KeyPressed
 
     private void jButton9KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton9KeyPressed
@@ -1533,10 +1546,11 @@ public class CalculaDORa extends javax.swing.JFrame {
            case java.awt.event.KeyEvent.VK_P -> jButtonPersent.doClick();
            case java.awt.event.KeyEvent.VK_DELETE, java.awt.event.KeyEvent.VK_BACK_SPACE -> jButtonErase.doClick();
            case java.awt.event.KeyEvent.VK_COMMA, java.awt.event.KeyEvent.VK_PERIOD, java.awt.event.KeyEvent.VK_DECIMAL -> jButtonDot.doClick();
-           case java.awt.event.KeyEvent.VK_EQUALS, java.awt.event.KeyEvent.VK_ENTER -> jButtonEqual.doClick();
            default -> {
            }
-       }
+       } if(evt.isShiftDown() && evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS) jButtonPlus.doClick();
+    else if (evt.getKeyCode() == java.awt.event.KeyEvent.VK_EQUALS || evt.getKeyCode() == java.awt.event.KeyEvent.VK_ENTER) jButtonEqual.doClick();
+       
     }//GEN-LAST:event_jButton9KeyPressed
 
     public void verificarOperacoes (){
@@ -1565,7 +1579,14 @@ public class CalculaDORa extends javax.swing.JFrame {
             entrada = "";
             jTextFieldSaida.setText(saida);
         }
+    }public void playTodos(){
+        URL url = getClass().getResource("todos"+".wav");
+        AudioClip audio =Applet.newAudioClip(url);
+        audio.play();
     }
+    
+    
+    
     public boolean igualdadePotencia ()throws Exception{
         boolean VF = false;
         if (calculo.equals("potencia")){
